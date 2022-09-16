@@ -3,8 +3,9 @@
 const b=2;
 function sumar(){
     let suma=a+b;
-    console.log(sumar);
-} */
+    console.log(suma);
+}
+sumar(); */
 /* function sumar(a,b){
     let suma=a+b;
     console.log(suma);
@@ -30,4 +31,7 @@ const sumar = function(a,b){
 }
 sumar(2,3); */
 /*Funcion que capture un numero y muestre la tabla de multiplicar de ese numero*/
-let number=prompt("Give me a number");
+let number=+prompt("Give me a number");
+for(let i=1;i<10;i++){
+    document.write(`${number}x${i}=${number*i}<br>`);
+}
